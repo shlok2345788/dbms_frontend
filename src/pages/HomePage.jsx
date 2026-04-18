@@ -14,25 +14,64 @@ const HomePage = () => {
             <Link to="/assessment" className="cc-btn">Take Assessment</Link>
             <Link to="/careers" className="cc-btn cc-btn-ghost">Explore Careers</Link>
           </div>
+          <div className="hero-metrics">
+            <article>
+              <strong>Personalized</strong>
+              <span>Role recommendations tuned to your skills and interests</span>
+            </article>
+            <article>
+              <strong>Market-aware</strong>
+              <span>See salaries, growth signals, and in-demand skills</span>
+            </article>
+            <article>
+              <strong>Actionable</strong>
+              <span>Get a roadmap that turns confusion into a plan</span>
+            </article>
+          </div>
         </div>
-        <div className="cc-hero-cards">
-          <article>
-            <h3>Career Assessment</h3>
-            <p>Match your strengths with top AI roles in minutes.</p>
-          </article>
-          <article>
-            <h3>Career Paths</h3>
-            <p>Compare responsibilities, salaries, and growth outlooks.</p>
-          </article>
-          <article>
-            <h3>Skills and Learning</h3>
-            <p>Build a practical roadmap with curated resources.</p>
-          </article>
+        <div className="cc-hero-visual">
+          <div className="cc-spotlight">
+            <p className="eyebrow">Career Intelligence Engine</p>
+            <h2>Everything you need to choose the right role faster.</h2>
+            <p>
+              Compare AI careers, understand skill gaps, and move from uncertainty to a focused learning path.
+            </p>
+            <div className="cc-stat-strip">
+              <article>
+                <strong>01</strong>
+                <span>Take the assessment</span>
+              </article>
+              <article>
+                <strong>02</strong>
+                <span>Review matched careers</span>
+              </article>
+              <article>
+                <strong>03</strong>
+                <span>Build your roadmap</span>
+              </article>
+            </div>
+          </div>
+
+          <div className="cc-hero-cards">
+            <article>
+              <h3>Career Assessment</h3>
+              <p>Match your strengths with top AI roles in minutes.</p>
+            </article>
+            <article>
+              <h3>Career Paths</h3>
+              <p>Compare responsibilities, salaries, and growth outlooks.</p>
+            </article>
+            <article>
+              <h3>Skills and Learning</h3>
+              <p>Build a practical roadmap with curated resources.</p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section className="cc-stats-card">
         <h2>AI Industry Snapshot</h2>
+        <p>Use these signals to orient your next move in a market that is changing fast.</p>
         <div className="cc-stats-grid">
           <div>
             <strong>$1.8T</strong>

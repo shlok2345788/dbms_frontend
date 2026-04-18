@@ -12,7 +12,14 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link className="brand" to="/">AI Career Compass</Link>
+      <Link className="brand" to="/">
+        <span className="brand-mark">AC</span>
+        <span className="brand-copy">
+          <strong>AI Career Compass</strong>
+          <span>Strategy. Skills. Momentum.</span>
+        </span>
+      </Link>
+
       <div className="nav-links">
         <Link to="/"><span className="nav-ico">🏠</span>Home</Link>
         <Link to="/assessment"><span className="nav-ico">🧭</span>Assessment</Link>
@@ -28,9 +35,19 @@ const Navbar = () => {
             </>
           )
         ) : (
-          <Link to="/login"><span className="nav-ico">🔐</span>Login</Link>
+          <Link className="nav-cta" to="/login"><span className="nav-ico">🔐</span>Login</Link>
         )}
-        {user && <button className="ghost-btn" onClick={onLogout}>Logout</button>}
+      </div>
+
+      <div className="nav-actions">
+        {user ? (
+          <>
+            <span className="nav-user">{user.name || user.email}</span>
+            <button className="ghost-btn" onClick={onLogout}>Logout</button>
+          </>
+        ) : (
+          <Link className="ghost-btn" to="/register">Create account</Link>
+        )}
       </div>
     </nav>
   );
